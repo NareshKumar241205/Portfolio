@@ -1,0 +1,84 @@
+.landing {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+
+  padding: 4rem;
+  gap: 3rem;
+}
+
+/* =========================
+   LEFT SIDE — HI!
+========================= */
+.landing-left {
+  position: relative;
+}
+
+.landing-hi {
+  font-size: 20rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--primary-accent);
+  line-height: 0.9;
+}
+
+.landing-hi .accent {
+  color: var(--primary-accent);
+}
+
+.baseline {
+  margin-top: 1rem;
+  width: 220px;
+  height: 2px;
+  background: var(--primary-accent);
+  box-shadow: 0 0 10px var(--glow-accent);
+}
+
+/* =========================
+   RIGHT SIDE — TEXT
+========================= */
+.landing-right {
+  max-width: 520px;
+}
+
+.landing-title {
+  font-size: 0.9rem;
+  letter-spacing: 0.3em;
+  margin-bottom: 2rem;
+  color: var(--text-main);
+}
+
+.landing-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 1.8rem;
+}
+
+/* =========================
+   ENTER BUTTON
+========================= */
+.enter-btn {
+  margin-top: 1.5rem;
+  padding: 0.9rem 2.2rem;
+
+  border: 1.5px solid var(--primary-accent);
+  background: transparent;
+
+  color: var(--primary-accent);
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.enter-btn:hover {
+  background: var(--primary-accent);
+  color: black;
+  box-shadow: 0 0 18px var(--glow-accent);
+}

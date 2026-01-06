@@ -1,0 +1,71 @@
+/* ============================
+   GLOBAL RESET
+============================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================
+   CSS VARIABLES (THEME)
+============================ */
+:root {
+  --primary-accent: #E84A4A;
+  --glow-accent: rgba(255, 47, 109, 0.7);
+
+  --text-main: #e6e6e6;
+  --text-muted: #9b9b9b;
+}
+
+
+
+/* ============================
+   BODY / ROOT
+============================ */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255, 0, 0, 0.06),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      #020000,
+      #000000
+    );
+
+  font-family: 'Orbitron', system-ui, sans-serif;
+  color: var(--text-main);
+
+  overflow: hidden;
+}
+
+/* ============================
+   GLOBAL ELEMENT DEFAULTS
+============================ */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
